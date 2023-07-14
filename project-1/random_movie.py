@@ -25,15 +25,17 @@ def main():
                        print("Ok yea i can work with this..I recommend The Secrets Of Hillsong")
                        userThinking = False
                    if(userNewQ == "action"):
-                       print("Ok this is a good one... Extraction2 on netflix")
+                       print("Ok this is a good one...Extraction2 on netflix")
                        userThinking = False
+            # if the user is too young i will exit the program by setting userThinking to False
            if(userAge == "no"):
                print("Your too young see ya...")
                userThinking = False
 
    if(userAnswer == "no"):
                print("Very well... Ill leave you alone")
-               restart = input("you Sure ?(yes/no)")
+               restart = input("you sure ?(yes/no)").lower()
+               # if the user is NOT sure they dont want to see a movie then i call the main function to start the questions all over
                if(restart == "no"):
                    main()
                else:
