@@ -1,0 +1,10 @@
+{% extends "base.html"%}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+    {% for poke, sprite in poke_sprite_arr %}
+        <li class="list-group-item"> 
+            {{poke}}
+                <img src={{sprite}} ></img> 
+        </li>
+    {% endfor %} 
+{% endblock %}
