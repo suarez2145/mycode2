@@ -2,9 +2,9 @@
 {% block title %} Home Page {% endblock %}
 {% block content %}
     {% for poke, sprite in poke_sprite_arr %}
-        <li class="list-group-item"> 
+        <div class="col-3"> 
             {{poke}}
                 <img src={{sprite}} ></img> 
-        </li>
+        </div>
     {% endfor %} 
 {% endblock %}

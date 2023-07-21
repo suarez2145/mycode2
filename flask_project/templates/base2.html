@@ -4,16 +4,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
     <title>{% block title %} {% endblock %}</title>
-    <body class="container">
-        <div class="content-wrapper container-fluid row">
-            <div class="title-cont col-12">
-                <h1>Exxons Poke Website</h1>
-            </div>
-            <div class="content-cont col-12">
-                <div class="container-fluid row">
-                        {% block content %} 
-                        {% endblock %}
+    <body class="container-fluid">
+        <div class="content-wrapper container-fluid row vh-100">
+            <div class="content-cont d-flex flex-column justify-content-center align-items-center">
+                <div class="title-cont">
+                        <h1>Exxons Poke Search</h1>
                 </div>
+                {% block content %} 
+                {% endblock %}
+                
             </div>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

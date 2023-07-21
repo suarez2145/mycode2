@@ -1,0 +1,11 @@
+{% extends "base2.html"%}
+{% block title %} Poke Search {% endblock %}
+{% block content %}
+    <form action = "{{ url_for('pokesearch')}}" method = "POST">
+            <label for="basic-url" class="form-label">Search for a Pokemon</label>
+            <div class="input-group mb-3">
+                <input type="text" name="pokename" class="form-control rounded-0" placeholder="Pokemon Name" id="poke-name" aria-describedby="basic-addon3">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}
